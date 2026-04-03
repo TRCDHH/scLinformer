@@ -1,0 +1,180 @@
+dataset,head_idx,basis_idx,GO_term,Adjusted_P_value,Combined_Score
+bmmc,0,0,immune response-regulating cell surface receptor signaling pathway (GO:0002768),0.0471692997137247,1014.3901741044946
+bmmc,1,0,mature conventional dendritic cell differentiation (GO:0097029),0.0108879002935799,5105.230681141124
+bmmc,3,0,regulation of cellular localization (GO:0060341),0.0159053997276406,473.30707301492265
+bmmc,3,0,regulation of membrane depolarization (GO:0003254),0.0486855493496288,714.6879621205851
+bmmc,1,1,positive regulation of prostaglandin biosynthetic process (GO:0031394),0.0040764580028726,5105.230681141124
+bmmc,1,1,positive regulation of unsaturated fatty acid biosynthetic process (GO:2001280),0.0040764580028726,2851.750942795132
+bmmc,1,1,regulation of prostaglandin biosynthetic process (GO:0031392),0.0040764580028726,2851.750942795132
+bmmc,1,1,prostanoid biosynthetic process (GO:0046457),0.0151732246522297,920.7238662710552
+bmmc,1,1,positive chemotaxis (GO:0050918),0.0164124959822134,714.6879621205851
+bmmc,3,1,regulation of immune response (GO:0050776),0.0364279441426918,154.20949207670594
+bmmc,1,2,regulation of T-helper 1 cell cytokine production (GO:2000554),0.0039474060825329,5105.230681141124
+bmmc,1,2,positive regulation of T-helper 1 cell cytokine production (GO:2000556),0.0039474060825329,5105.230681141124
+bmmc,1,2,positive regulation of T-helper 1 type immune response (GO:0002827),0.0172557718560648,1262.919124249693
+bmmc,1,2,regulation of neuroinflammatory response (GO:0150077),0.0326677181811346,663.3671793000248
+bmmc,1,2,positive regulation of T cell cytokine production (GO:0002726),0.0326677181811346,578.2102706794014
+bmmc,3,2,positive regulation of cellular carbohydrate metabolic process (GO:0010676),0.03599766776768,1126.5206724787724
+bmmc,3,2,cellular response to interleukin-7 (GO:0098761),0.03599766776768,663.3671793000248
+bmmc,3,2,interleukin-7-mediated signaling pathway (GO:0038111),0.03599766776768,663.3671793000248
+bmmc,3,3,positive regulation of neutrophil chemotaxis (GO:0090023),0.0386390285062112,663.3671793000248
+bmmc,3,3,positive regulation of neutrophil migration (GO:1902624),0.0386390285062112,542.5477632515199
+bmmc,3,3,positive regulation of granulocyte chemotaxis (GO:0071624),0.0386390285062112,542.5477632515199
+bmmc,3,3,regulation of neutrophil chemotaxis (GO:0090022),0.0386390285062112,455.6920507677008
+bmmc,0,4,regulation of vascular associated smooth muscle cell proliferation (GO:1904705),0.0068583116110648,696.2013737482083
+bmmc,0,4,negative regulation of smooth muscle cell migration (GO:0014912),0.0293584852989988,1014.3901741044946
+bmmc,0,4,positive regulation of vascular associated smooth muscle cell proliferation (GO:1904707),0.0448732392598002,578.2102706794014
+bmmc,3,5,neuron projection morphogenesis (GO:0048812),0.0138974402669496,220.1794973259299
+bmmc,0,6,regulation of Rho protein signal transduction (GO:0035023),0.0295063935452296,272.99193647793965
+bmmc,0,6,negative regulation of Rho protein signal transduction (GO:0035024),0.0295063935452296,714.6879621205851
+bmmc,0,8,regulation of histone methylation (GO:0031060),0.0411018794185983,1014.3901741044946
+bmmc,1,8,chondrocyte development (GO:0002063),0.0086783910403287,3684.499894523836
+bmmc,0,12,xenobiotic transport across blood-brain barrier (GO:1990962),0.0090034244126256,3684.499894523836
+bmmc,0,12,transepithelial transport (GO:0070633),0.0356798169514983,841.4142385973647
+bmmc,0,12,xenobiotic transport (GO:0042908),0.0375219084238022,618.2139479571657
+bmmc,0,14,neuron projection development (GO:0031175),0.0366056156149078,164.87577181417964
+bmmc,0,15,glucan catabolic process (GO:0009251),0.0368390889824134,920.7238662710552
+bmmc,0,15,cellular polysaccharide catabolic process (GO:0044247),0.0368390889824134,841.4142385973647
+bmmc,1,16,cellular response to pH (GO:0071467),0.0449152879521828,714.6879621205851
+bmmc,2,16,spindle assembly checkpoint signaling (GO:0071173),0.0294654685667554,578.2102706794014
+bmmc,2,16,mitotic spindle assembly checkpoint signaling (GO:0007094),0.0294654685667554,578.2102706794014
+bmmc,2,16,mitotic spindle checkpoint signaling (GO:0071174),0.0294654685667554,578.2102706794014
+bmmc,2,16,negative regulation of mitotic metaphase/anaphase transition (GO:0045841),0.0294654685667554,542.5477632515199
+bmmc,0,18,regulation of vascular associated smooth muscle cell migration (GO:1904752),0.042949805773612,1262.919124249693
+bmmc,1,18,T cell proliferation (GO:0042098),0.0382551486276871,920.7238662710552
+bmmc,1,18,diol metabolic process (GO:0034311),0.0382551486276871,663.3671793000248
+bmmc,1,19,positive regulation of hemoglobin biosynthetic process (GO:0046985),0.0067966223579493,3684.499894523836
+bmmc,1,19,regulation of hemoglobin biosynthetic process (GO:0046984),0.0067966223579493,2851.750942795132
+bmmc,2,19,lipid oxidation (GO:0034440),0.0470173671366639,1126.5206724787724
+bmmc,3,19,extracellular structure organization (GO:0043062),0.0466526554491625,116.74987235018932
+bmmc,3,19,activin receptor signaling pathway (GO:0032924),0.0466526554491625,663.3671793000248
+bmmc,3,19,apoptotic nuclear changes (GO:0030262),0.0466526554491625,481.769182294251
+bmmc,3,19,positive regulation of epithelial cell proliferation (GO:0050679),0.0466526554491625,130.6934445553182
+bmmc,3,19,maintenance of blood-brain barrier (GO:0035633),0.0466526554491625,355.5592348271371
+bmmc,3,23,neuron projection fasciculation (GO:0106030),0.0257414398841846,1646.7365311362207
+bmmc,3,23,axonal fasciculation (GO:0007413),0.0257414398841846,1262.919124249693
+bmmc,3,24,neuron migration (GO:0001764),0.0126349655047757,460.3468031322656
+bmmc,0,25,protein trimerization (GO:0070206),0.025044281582119,920.7238662710552
+bmmc,0,25,protein homotrimerization (GO:0070207),0.025044281582119,920.7238662710552
+bmmc,2,25,regulation of T cell differentiation in thymus (GO:0033081),0.0224103104449024,1126.5206724787724
+bmmc,2,25,positive regulation of T cell receptor signaling pathway (GO:0050862),0.0224103104449024,1014.3901741044946
+bmmc,2,25,positive regulation of antigen receptor-mediated signaling pathway (GO:0050857),0.0342532393016475,578.2102706794014
+bmmc,2,26,positive regulation of natural killer cell mediated cytotoxicity (GO:0045954),0.048295022207874,618.2139479571657
+bmmc,2,26,positive regulation of natural killer cell mediated immunity (GO:0002717),0.048295022207874,510.5767014966948
+bmmc,0,28,lipid phosphorylation (GO:0046834),0.0306014903786132,1646.7365311362207
+bmmc,1,28,semaphorin-plexin signaling pathway involved in neuron projection guidance (GO:1902285),0.0421477112546523,1126.5206724787724
+bmmc,1,30,positive regulation of interleukin-4 production (GO:0032753),0.000827228773628869,1909.837643971431
+bmmc,1,30,regulation of interleukin-4 production (GO:0032673),0.0008931594060161433,1346.696399028853
+bmmc,1,30,positive regulation of T-helper 2 cell differentiation (GO:0045630),0.0036620426612123,3684.499894523836
+bmmc,1,30,regulation of T-helper 2 cell differentiation (GO:0045628),0.0051173266668167,2308.188874209161
+bmmc,1,30,positive regulation of T-helper cell differentiation (GO:0045624),0.0110257422567351,1014.3901741044946
+bmmc,0,31,heterochromatin organization (GO:0070828),0.0293971106061732,1014.3901741044946
+bmmc,0,31,positive regulation of muscle hypertrophy (GO:0014742),0.0293971106061732,773.4756743774749
+bmmc,0,31,positive regulation of cardiac muscle hypertrophy (GO:0010613),0.0293971106061732,714.6879621205851
+bmmc,0,31,regulation of cardiac muscle hypertrophy (GO:0010611),0.0395508255365709,481.769182294251
+bmmc,1,31,regulation of signal transduction (GO:0009966),0.0411196510040299,132.90339060551975
+bmmc,1,32,sympathetic ganglion development (GO:0061549),8.135681904399589e-05,5613.945897651089
+bmmc,1,32,ganglion development (GO:0061548),0.00010621684303027726,3505.546305288435
+bmmc,1,32,sympathetic nervous system development (GO:0048485),0.0001795201500964943,2267.751744149168
+bmmc,1,32,positive regulation of cell-matrix adhesion (GO:0001954),0.0024224031558895,548.7162098920684
+bmmc,1,32,dendrite arborization (GO:0140059),0.0024224031558895,2851.750942795132
+bmmc,2,32,synaptic vesicle endocytosis (GO:0048488),0.0046615475694106,671.1354914711817
+bmmc,2,32,regulation of ruffle assembly (GO:1900027),0.0377159899320162,481.769182294251
+bmmc,2,32,clathrin-dependent endocytosis (GO:0072583),0.0377159899320162,431.9867091057638
+bmmc,2,32,receptor clustering (GO:0043113),0.0377159899320162,390.5418048109173
+bmmc,2,32,regulation of NMDA receptor activity (GO:2000310),0.0394445865338347,325.6801394016241
+bmmc,3,32,protein O-linked glycosylation via threonine (GO:0018243),0.0083235824272167,1927.3444106230904
+bmmc,0,34,synaptic membrane adhesion (GO:0099560),0.0467778532430714,1014.3901741044946
+bmmc,1,35,positive regulation of cytoplasmic transport (GO:1903651),0.0462266832208597,1432.0496756090347
+bmmc,1,35,negative regulation of phosphorylation (GO:0042326),0.0462266832208597,217.17528174058037
+bmmc,1,35,negative regulation of intrinsic apoptotic signaling pathway by p53 class mediator (GO:1902254),0.0462266832208597,773.4756743774749
+bmmc,1,35,negative regulation of signal transduction by p53 class mediator (GO:1901797),0.0462266832208597,714.6879621205851
+bmmc,1,36,peptidyl-threonine modification (GO:0018210),0.0412940577438027,307.4876947120848
+bmmc,1,36,transmembrane receptor protein tyrosine kinase signaling pathway (GO:0007169),0.0465492427952978,79.30938677458334
+bmmc,3,38,regulation of toll-like receptor 9 signaling pathway (GO:0034163),0.00010316757798243016,4023.41726456181
+bmmc,3,38,regulation of lymphocyte differentiation (GO:0045619),0.0420597565544786,618.2139479571657
+bmmc,1,42,regulation of striated muscle cell differentiation (GO:0051153),0.014002405928083,2851.750942795132
+bmmc,1,42,protein kinase C-activating G protein-coupled receptor signaling pathway (GO:0007205),0.0182683092181141,1432.0496756090347
+bmmc,1,42,inflammatory response (GO:0006954),0.0379020736333175,106.23638824320317
+bmmc,1,42,regulation of myotube differentiation (GO:0010830),0.0491769453715416,455.6920507677008
+bmmc,0,43,positive regulation of anion transmembrane transport (GO:1903961),0.0052053706582852,5105.230681141124
+bmmc,3,43,lysine catabolic process (GO:0006554),0.0083197471448884,1262.919124249693
+bmmc,3,43,lysine metabolic process (GO:0006553),0.0083197471448884,1262.919124249693
+bmmc,3,43,aspartate family amino acid catabolic process (GO:0009068),0.0142770411146392,663.3671793000248
+bmmc,1,44,Roundabout signaling pathway (GO:0035385),0.0038191421244892,5105.230681141124
+bmmc,1,44,negative regulation of chemokine-mediated signaling pathway (GO:0070100),0.0038191421244892,3684.499894523836
+bmmc,1,44,regulation of chemokine-mediated signaling pathway (GO:0070099),0.0047438728469504,2308.188874209161
+bmmc,1,44,ventricular septum morphogenesis (GO:0060412),0.0374556382411645,390.5418048109173
+bmmc,1,44,negative regulation of chemotaxis (GO:0050922),0.0374556382411645,325.6801394016241
+bmmc,1,46,ammonium transport (GO:0015696),0.0150480401369983,2851.750942795132
+bmmc,1,46,negative regulation of complement activation (GO:0045916),0.023537062435539,1262.919124249693
+bmmc,1,46,neuron cell-cell adhesion (GO:0007158),0.0284236327579926,841.4142385973647
+bmmc,2,47,regulation of protein kinase A signaling (GO:0010738),0.0493517740599786,618.2139479571657
+bmmc,2,47,regulation of release of sequestered calcium ion into cytosol by sarcoplasmic reticulum (GO:0010880),0.0493517740599786,510.5767014966948
+bmmc,2,47,regulation of ryanodine-sensitive calcium-release channel activity (GO:0060314),0.0493517740599786,455.6920507677008
+bmmc,2,47,T cell activation involved in immune response (GO:0002286),0.0493517740599786,390.5418048109173
+bmmc,2,48,positive regulation of neurogenesis (GO:0050769),0.0476583439965911,278.2746781911583
+bmmc,2,48,regulation of interleukin-1 beta production (GO:0032651),0.0476583439965911,228.24774566778848
+bmmc,2,48,second-messenger-mediated signaling (GO:0019932),0.0476583439965911,206.9722118819376
+bmmc,3,49,pathway-restricted SMAD protein phosphorylation (GO:0060389),0.0460878111796197,1126.5206724787724
+bmmc,3,49,artery development (GO:0060840),0.0460878111796197,510.5767014966948
+bmmc,3,49,regulation of protein ubiquitination (GO:0031396),0.0460878111796197,155.3791485414435
+bmmc,3,49,cellular response to transforming growth factor beta stimulus (GO:0071560),0.0460878111796197,145.7440104063617
+bmmc,3,49,regulation of chondrocyte differentiation (GO:0032330),0.0460878111796197,431.9867091057638
+bmmc,2,50,negative regulation of cilium assembly (GO:1902018),0.019199416488204,1262.919124249693
+bmmc,1,52,positive regulation of behavior (GO:0048520),0.0351674270382793,1646.7365311362207
+bmmc,1,52,positive regulation of myeloid leukocyte cytokine production involved in immune response (GO:0061081),0.0351976053543976,841.4142385973647
+bmmc,1,52,negative regulation of phagocytosis (GO:0050765),0.0351976053543976,773.4756743774749
+bmmc,1,52,positive regulation of vascular associated smooth muscle cell proliferation (GO:1904707),0.0406102815301192,578.2102706794014
+bmmc,2,52,regulation of cardiac muscle contraction by regulation of the release of sequestered calcium ion (GO:0010881),0.0174263387123644,773.4756743774749
+bmmc,2,52,positive regulation of muscle hypertrophy (GO:0014742),0.0174263387123644,773.4756743774749
+bmmc,2,52,positive regulation of cardiac muscle hypertrophy (GO:0010613),0.0174263387123644,714.6879621205851
+bmmc,2,52,regulation of cardiac muscle contraction by calcium ion signaling (GO:0010882),0.0174263387123644,578.2102706794014
+bmmc,2,52,regulation of release of sequestered calcium ion into cytosol by sarcoplasmic reticulum (GO:0010880),0.0174263387123644,510.5767014966948
+bmmc,3,53,regulation of relaxation of cardiac muscle (GO:1901897),0.0085483776914099,3684.499894523836
+bmmc,3,53,regulation of cell communication by electrical coupling involved in cardiac conduction (GO:1901844),0.014720913758265,1262.919124249693
+bmmc,3,53,regulation of cell communication by electrical coupling (GO:0010649),0.014720913758265,1126.5206724787724
+bmmc,3,53,regulation of release of sequestered calcium ion into cytosol by sarcoplasmic reticulum (GO:0010880),0.0251634739984342,510.5767014966948
+bmmc,3,53,regulation of ryanodine-sensitive calcium-release channel activity (GO:0060314),0.0251634739984342,455.6920507677008
+bmmc,0,54,lysine catabolic process (GO:0006554),0.0149328794908253,1262.919124249693
+bmmc,0,54,lysine metabolic process (GO:0006553),0.0149328794908253,1262.919124249693
+bmmc,0,54,aspartate family amino acid catabolic process (GO:0009068),0.0256254584108909,663.3671793000248
+bmmc,1,54,negative regulation of insulin receptor signaling pathway (GO:0046627),0.0029520964735537,1076.0625734624882
+bmmc,1,54,negative regulation of cellular response to insulin stimulus (GO:1900077),0.0029520964735537,1023.0119639068774
+bmmc,1,54,regulation of insulin receptor signaling pathway (GO:0046626),0.0083793609149774,532.0407033036188
+bmmc,1,54,regulation of Notch signaling pathway (GO:0008593),0.0282484796784768,228.24774566778848
+bmmc,1,54,regulation of transforming growth factor beta production (GO:0071634),0.0282484796784768,714.6879621205851
+bmmc,2,54,regulation of muscle organ development (GO:0048634),0.0127749222915302,2851.750942795132
+bmmc,0,55,positive regulation of interleukin-4 production (GO:0032753),0.000859045264922287,1909.837643971431
+bmmc,0,55,regulation of interleukin-4 production (GO:0032673),0.0009050353066985752,1346.696399028853
+bmmc,0,55,positive regulation of interleukin-2 production (GO:0032743),0.0009050353066985752,1134.1565994177497
+bmmc,0,55,regulation of interleukin-2 production (GO:0032663),0.0044160727616547,486.9077836706825
+bmmc,0,55,positive regulation of T cell proliferation (GO:0042102),0.0087241094079798,313.9569920205279
+bmmc,1,55,negative regulation of cellular process (GO:0048523),0.0424564798346158,75.39465261038788
+bmmc,1,55,gliogenesis (GO:0042063),0.0424564798346158,773.4756743774749
+bmmc,1,55,negative regulation of cell death (GO:0060548),0.0424564798346158,191.6491643817023
+bmmc,1,55,regulation of cell death (GO:0010941),0.0424564798346158,170.75018181181642
+bmmc,1,56,regulation of T cell differentiation (GO:0045580),0.0081308840175557,647.5977302945712
+bmmc,1,56,motor neuron axon guidance (GO:0008045),0.0390288250408086,841.4142385973647
+bmmc,1,56,negative regulation of interleukin-2 production (GO:0032703),0.0498077376609589,542.5477632515199
+bmmc,1,57,fatty acid metabolic process (GO:0006631),0.0370793816756386,129.17880995874862
+bmmc,1,57,purine nucleoside bisphosphate metabolic process (GO:0034032),0.0370793816756386,340.05150286391984
+bmmc,1,57,ribonucleoside bisphosphate metabolic process (GO:0033875),0.0370793816756386,340.05150286391984
+bmmc,1,57,acyl-CoA metabolic process (GO:0006637),0.0396085262098067,267.2837742480994
+bmmc,0,58,negative regulation of glucose transmembrane transport (GO:0010829),0.0424304886735182,1262.919124249693
+bmmc,0,58,positive regulation of heterotypic cell-cell adhesion (GO:0034116),0.0424304886735182,920.7238662710552
+bmmc,0,58,negative regulation of extrinsic apoptotic signaling pathway in absence of ligand (GO:2001240),0.0424304886735182,510.5767014966948
+bmmc,0,58,negative regulation of signal transduction in absence of ligand (GO:1901099),0.0424304886735182,510.5767014966948
+bmmc,0,58,regulation of heterotypic cell-cell adhesion (GO:0034114),0.0424304886735182,455.6920507677008
+bmmc,0,61,smooth muscle contraction (GO:0006939),0.0479521926550313,1014.3901741044946
+bmmc,1,61,establishment of protein localization to plasma membrane (GO:0061951),0.007696503600476,722.9426366158579
+bmmc,2,62,positive thymic T cell selection (GO:0045059),0.0054005720579709,5105.230681141124
+bmmc,2,62,T cell activation (GO:0042110),0.0435127353220555,197.5443505613132
+bmmc,3,62,regulation of B cell receptor signaling pathway (GO:0050855),0.0010781332474987,1346.696399028853
+bmmc,3,62,positive regulation of B cell receptor signaling pathway (GO:0050861),0.0046371604047547,2851.750942795132
+bmmc,3,62,positive regulation of antigen receptor-mediated signaling pathway (GO:0050857),0.0305138026966641,578.2102706794014
+bmmc,2,63,negative regulation of macrophage migration (GO:1905522),0.0086596530709242,2308.188874209161
+bmmc,2,63,negative regulation of bone resorption (GO:0045779),0.0086596530709242,1927.3444106230904
+bmmc,2,63,lipid phosphorylation (GO:0046834),0.0086596530709242,1646.7365311362207
+bmmc,2,63,negative regulation of bone remodeling (GO:0046851),0.0086596530709242,1432.0496756090347
+bmmc,2,63,regulation of leukocyte activation (GO:0002694),0.0150447748012094,841.4142385973647

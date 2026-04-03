@@ -1,0 +1,13 @@
+numpy<2.1,>=1.23
+scipy>=1.9
+pandas>=1.5
+scikit-learn>=1.2
+torch>=2.0
+anndata>=0.9
+scanpy>=1.9
+matplotlib>=3.6
+seaborn>=0.12
+adjustText>=0.8
+tqdm
+leidenalg
+igraph
