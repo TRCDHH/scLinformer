@@ -4,58 +4,67 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import scanpy as sc
 
-# ==================== 配置 ====================
-attn_path = "/home/output/adamson/SOCS1_delta_attn.npy"
-csv_path = "/home/output/adamson/SOCS1_delta.csv"
-h5ad_path = "/home/data/adamson/control.h5ad"
+# ====================== Configuration ======================
 
-perturb_gene = "SOCS1"
-top_n = 20
-save_path = "/home/output/adamson/SOCS1_heatmap_abs.png"
+attn_path = "/home/output/adamson/SOCS1_delta_attn.npy" # Path to saved delta attention matrix (shape: [N+1, N+1], including CLS token)
+csv_path = "/home/output/adamson/SOCS1_delta.csv" # Path to CSV file containing gene importance scores
+h5ad_path = "/home/data/adamson/control.h5ad"  # Path to AnnData object (.h5ad) containing gene expression data
+perturb_gene = "SOCS1"  # The perturbed gene used as the reference node in the heatmap
+top_n = 20  # Number of top genes selected for visualization
+save_path = "/home/output/adamson/SOCS1_heatmap_abs.png"    # Output path for saving the heatmap figure
 
-# ==================== Step 1: 读取数据 ====================
-delta_attn = np.load(attn_path)  # [N+1, N+1]
+# ====================== Step 1: Load Data ======================
+
+delta_attn = np.load(attn_path)
+# Load attention difference matrix [N+1, N+1]
 
 adata = sc.read_h5ad(h5ad_path)
 gene_names = list(adata.var['gene_name'])
+# Extract gene names from AnnData object
 
-# ==================== Step 2: CSV取Top基因 ====================
+# ====================== Step 2: Select Top Genes ======================
+
 df = pd.read_csv(csv_path)
 df = df.sort_values(by="importance", ascending=False)
 
 top_genes = df['target'].head(top_n).tolist()
+# Select top-N most important genes
 
-# ==================== Step 3: 构建索引（注意CLS偏移） ====================
+# ====================== Step 3: Build Gene Indices ======================
+
 gene_to_idx = {g: i for i, g in enumerate(gene_names)}
 
 if perturb_gene not in gene_to_idx:
-    raise ValueError(f"{perturb_gene} 不在gene list中")
+    raise ValueError(f"{perturb_gene} not found in gene list")
 
-# ⚠️ +1（跳过CLS）
+# Shift by +1 to account for CLS token
 perturb_idx = gene_to_idx[perturb_gene] + 1
 
+# Keep only valid genes existing in gene list
 valid_genes = [g for g in top_genes if g in gene_to_idx]
 
 indices = [perturb_idx] + [gene_to_idx[g] + 1 for g in valid_genes]
 labels = [perturb_gene] + valid_genes
 
-print(f"最终基因数: {len(labels)}")
+print(f"Number of genes used in heatmap: {len(labels)}")
 
-# ==================== Step 4: 提取子矩阵 ====================
+# ====================== Step 4: Extract Submatrix ======================
+
 sub_attn = delta_attn[np.ix_(indices, indices)]
 
-# ==================== ⭐ 改动1：取绝对值 ====================
+# Take absolute value of attention differences
 sub_attn_abs = np.abs(sub_attn)
 
-# ==================== ⭐ 改动2：颜色范围（柔和关键） ====================
+# Define color scaling (95th percentile for robustness)
 vmax = np.percentile(sub_attn_abs, 95)
 
-# ==================== 画图 ====================
+# ====================== Step 5: Visualization ======================
+
 plt.figure(figsize=(10, 8))
 
 sns.heatmap(
     sub_attn_abs,
-    cmap="Blues",              # ⭐ 蓝色渐变
+    cmap="Blues",
     vmin=0,
     vmax=vmax,
     xticklabels=labels,
@@ -67,7 +76,7 @@ sns.heatmap(
     }
 )
 
-plt.title("SOCS1 Connectivity Heatmap (|Δ Attention|)", fontsize=14)
+plt.title(f"{perturb_gene} Connectivity Heatmap (|Δ Attention|)", fontsize=14)
 plt.xticks(rotation=90)
 plt.yticks(rotation=0)
 

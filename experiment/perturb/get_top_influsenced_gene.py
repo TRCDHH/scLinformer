@@ -9,18 +9,24 @@ from tqdm import tqdm
 import pandas as pd
 from scipy import sparse
 
-perturb_gene = "KLF1+CEBPA"
-top_n = 100
-model = RNAEncoder(n_genes=5045)
+# parameters
+perturb_gene = "gene"  # Name of the perturbed gene.
+rna_encoder_model_path = '/home/output/norman/model/rna_encoder.pth'  # Path to the pretrained RNA encoder model
+processed_perturb_data_path = '/home/data/perturb.h5ad'  # Path to the perturbed dataset (AnnData format, .h5ad)
+processed_control_data_path = '/home/data/control.h5ad'  # Path to the control (non-perturbed) dataset (AnnData format, .h5ad)
+output_path = '/home/output'  # Directory where results will be saved
+top_n = 100  # Number of top genes to select based on importance scores
+
+model = RNAEncoder()
 if torch.cuda.is_available():
     model = model.cuda()
-model.load_state_dict(torch.load('/home/output/norman/model/rna_encoder.pth'))
+model.load_state_dict(torch.load(rna_encoder_model_path))
 n_cell = 32
 
-rna_control = sc.read_h5ad('/home/data/norman/control.h5ad')
+rna_control = sc.read_h5ad(processed_control_data_path)
 gene_names = rna_control.var['gene_name']
 rna_control = rna_control.X.toarray()  if sparse.issparse(rna_control.X)  else np.asarray(rna_control.X)
-rna_rd = sc.read_h5ad(f'/home/data/norman/{perturb_gene}.h5ad')
+rna_rd = sc.read_h5ad(processed_perturb_data_path)
 rna_rd = rna_rd.X.toarray()  if sparse.issparse(rna_rd.X)  else np.asarray(rna_rd.X)
 
 idx_ctrl = np.random.choice(rna_control.shape[0], n_cell, replace=False)
@@ -53,53 +59,52 @@ def get_attnetion(dataloader):
 control_cell_attn = get_attnetion(control_dataloader)
 rd_cell_attn = get_attnetion(rd_dataloader)
 delta_attn = rd_cell_attn - control_cell_attn
-# print(delta_attn, rd_cell_attn, control_cell_attn)
-np.save(f"/home/output/norman/{perturb_gene}_delta_attn.npy", delta_attn.cpu().numpy())
+np.save(f"output_path/{perturb_gene}_delta_attn.npy", delta_attn.cpu().numpy())
 
-# ====================== ✅ 关键修正：支持多基因扰动 ======================
 def get_top_perturb_genes(delta_attn, gene_names, perturb_gene, top_n=100):
     """
-    修正版：支持 perturb_gene = "A+B" 多基因扰动
-    自动合并两个扰动基因的重要性分数
+    Revised version: supports multi-gene perturbation such as "A+B".
+    Automatically aggregates the importance scores from multiple perturbed genes.
     """
-    # 1. 去掉 CLS token
+    # 1. Remove CLS token
     delta_attn = delta_attn[1:, 1:]
 
-    # 2. 拆分扰动基因（支持 + 连接）
+    # 2. Parse perturbation genes (support "+" separator)
     perturb_genes = perturb_gene.split("+")
     gene_to_idx = {g: i for i, g in enumerate(gene_names)}
 
-    # 3. 获取所有扰动基因的索引
+    # 3. Get indices of all perturbed genes
     perturb_idxs = []
     for g in perturb_genes:
         if g not in gene_to_idx:
-            raise ValueError(f"基因 {g} 不在基因列表中！")
+            raise ValueError(f"Gene {g} is not found in the gene list!")
         perturb_idxs.append(gene_to_idx[g])
 
-    # 4. 合并多个源基因的 attention 影响（取绝对值求和 = 总重要性）
+    # 4. Aggregate attention impact from multiple source genes
+    #    (sum of absolute values = overall importance)
     total_importance = torch.zeros(delta_attn.shape[1], device=delta_attn.device)
     for idx in perturb_idxs:
         imp = torch.abs(delta_attn[idx])
         total_importance += imp
 
-    # 5. 把扰动基因自身的重要性置0（排除自己）
+    # 5. Set self-importance of perturbed genes to zero (exclude themselves)
     for idx in perturb_idxs:
         total_importance[idx] = 0
 
-    # 6. 取TopN
+    # 6. Select Top-N genes
     values, indices = torch.topk(total_importance, top_n)
 
-    # 7. 构建输出表格
+    # 7. Build output DataFrame
     df = pd.DataFrame({
-        "source": perturb_gene,          # 保留 A+B 格式
+        "source": perturb_gene,  # keep "A+B" format
         "target": [gene_names[i] for i in indices.tolist()],
         "importance": values.cpu().tolist()
     })
 
     return df
 
-# ====================== 运行 & 保存 ======================
+# ====================== Run & Save ======================
 df = get_top_perturb_genes(delta_attn, gene_names, perturb_gene, top_n=top_n)
-df.to_csv(f"/home/output/norman/{perturb_gene}_delta.csv", index=False)
-print(f"✅ 完成！结果已保存：{perturb_gene}_delta.csv")
-print(f"✅ 受 {perturb_gene} 影响最大的Top{top_n}个基因")
+df.to_csv(f"output_path/{perturb_gene}_delta.csv", index=False)
+print(f"Done! Results saved to: {perturb_gene}_delta.csv")
+print(f"Top {top_n} genes most influenced by {perturb_gene}")

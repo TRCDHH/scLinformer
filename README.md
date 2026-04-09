@@ -1,3 +1,4 @@
 # scLinformer
 
-画图代码在draw里
+![image-20260409203123935](static\img\fig.png)
+
