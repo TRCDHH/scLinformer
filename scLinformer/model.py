@@ -64,20 +64,11 @@ class RNAEncoder(nn.Module):
                     nn.init.zeros_(m.bias)
                     
     def add_noise(self, x, noise_std=0.05):
-        """训练时添加高斯噪声（增强鲁棒性）"""
         if self.training and noise_std > 0:
             return x + torch.randn_like(x) * noise_std
         return x
 
     def forward(self, x, gene_idx=None, get_attn = False, get_gene_embed=False, get_attn_E=False):
-        """
-        Args:
-            x: (batch, n_genes) 基因表达值
-            gene_idx: (batch, n_genes) 或 None，基因索引用于嵌入
-        Returns:
-            mu: (batch, latent_dim)
-            logvar: (batch, latent_dim)
-        """
         batch_size = x.size(0)
         x = self.add_noise(x, noise_std=self.noise if hasattr(self, 'training') else 0)
         x = x.unsqueeze(-1)
@@ -125,7 +116,6 @@ class RNAEncoder(nn.Module):
         return mu
     
     def encode(self, x, gene_idx=None):
-        """推理时使用，只返回mu（最可能的编码）"""
         mu= self.forward(x, gene_idx)
         return mu                     
 
@@ -269,17 +259,6 @@ class LinformerBlock(nn.Module):
             return x, attn
         
         return x
-               
-class Discriminator(nn.Module):
-    def __init__(self, input_dim=32, d_model=256, out_dim = 1):
-        super(Discriminator, self).__init__()
-        self.net = nn.Sequential(
-            nn.Linear(input_dim, d_model),
-            nn.GELU(),
-            nn.Linear(d_model, out_dim)
-        )
-    def forward(self, x):
-        return self.net(x)
     
 class GeneEmbeding(nn.Module):
     def __init__(
@@ -305,40 +284,3 @@ class SimpleClassifier(nn.Module):
         x = self.norm(x)
         x = self.dropout(x)
         return self.classifier(x)
-
-
-# class ResidualMLP(nn.Module):
-#     def __init__(self, num_classes, input_dim=32, hidden_dim=64):
-#         super().__init__()
-#         self.norm = nn.LayerNorm(input_dim)
-#         self.fc1 = nn.Linear(input_dim, hidden_dim)
-#         self.act = nn.GELU()
-#         self.dropout = nn.Dropout(0.3)
-#         self.fc2 = nn.Linear(hidden_dim, num_classes)
-#         # 投影 shortcut，维度匹配
-#         self.shortcut = nn.Linear(input_dim, num_classes)
-        
-#     def forward(self, x):
-#         residual = self.shortcut(x)
-#         x = self.norm(x)
-#         x = self.fc1(x)
-#         x = self.act(x)
-#         x = self.dropout(x)
-#         x = self.fc2(x)
-#         return x + residual
-
-# class MLPClassifier(nn.Module):
-#     def __init__(self, num_classes, input_dim=32, hidden_dim=64, dropout=0.3):
-#         super().__init__()
-#         self.norm = nn.LayerNorm(input_dim)
-#         self.fc1 = nn.Linear(input_dim, hidden_dim)
-#         self.act = nn.GELU()
-#         self.dropout = nn.Dropout(dropout)
-#         self.fc2 = nn.Linear(hidden_dim, num_classes)
-        
-#     def forward(self, x):
-#         x = self.norm(x)
-#         x = self.fc1(x)
-#         x = self.act(x)
-#         x = self.dropout(x)
-#         return self.fc2(x)
