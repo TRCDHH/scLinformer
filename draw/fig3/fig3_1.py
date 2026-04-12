@@ -1,3 +1,4 @@
+# %% [1] Import Libraries and Define All Custom Parameters (Top)
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -6,42 +7,51 @@ from matplotlib.gridspec import GridSpec
 from textwrap import wrap
 from matplotlib.lines import Line2D
 
-# -------------------------- 【你只需要修改这里】--------------------------
+# ---------------------- CUSTOM PARAMETERS ----------------------
 CSV_PATH = "/home/evaluation/basis/bmmc/bmmc_ALL_basis_significant_GO_summary.csv"
 SAVE_PATH = "/home/draw/fig3/linformer_go_bmmc.png"
-TOP_GO      = 10
-# ===================================================
+TOP_GO_TERMS = 10
+FONT_SANS_SERIF = 'Arial'
+PLOT_FIGSIZE = (15, 7)
+PALETTE_COLORS = ["#4A90E2", "#5CDB96", "#F5A623", "#E2596B", "#9B6DD9", "#5CC8DB"]
+POINT_SIZE_RANGE = (80, 500)
+DPI_VALUE = 300
+GRID_ALPHA = 0.15
+LABEL_SPACING = 1.2
+FONT_SCALE = 1.1
 
-plt.rcParams['font.sans-serif'] = ['Arial']
+# %% [2] Global Plot Settings
+plt.rcParams['font.sans-serif'] = [FONT_SANS_SERIF]
 plt.rcParams['axes.unicode_minus'] = False
-sns.set(style="whitegrid", font_scale=1.1)
+sns.set(style="whitegrid", font_scale=FONT_SCALE)
 
-# 1. 读取数据
+# %% [3] Load and Process Data
 df = pd.read_csv(CSV_PATH)
 
-# 2. 数据处理
+# Calculate negative log10 P-value
 df['neglog10P'] = -np.log10(df['Adjusted_P_value'])
 df['GO_short'] = df['GO_term'].str.replace(r" \(GO:\d+\)", "", regex=True).str.strip()
 
+# Group by basis index and GO term
 df_basis = df.groupby(['basis_idx', 'GO_short'], as_index=False).agg({
     'neglog10P': 'max',
     'Combined_Score': 'max'
 })
 
-# 选 top GO
+# Select top GO terms by maximum significance
 top_go_names = (
     df_basis.groupby('GO_short')['neglog10P']
     .max()
-    .nlargest(TOP_GO)
+    .nlargest(TOP_GO_TERMS)
     .index
 )
 
 df_plot = df_basis[df_basis['GO_short'].isin(top_go_names)].copy()
 
-#  log 压缩大小
+# Log scale for point size
 df_plot['size_scaled'] = np.log1p(df_plot['Combined_Score'])
 
-# GO 排序
+# Sort GO terms by significance
 go_order = (
     df_plot.groupby('GO_short')['neglog10P']
     .max()
@@ -55,25 +65,23 @@ df_plot['GO_short'] = pd.Categorical(
     ordered=True
 )
 
-# ========================== ✅ 最小修改：固定布局 不溢出 ==========================
-# 用 GridSpec 给图例单独留空间，永远不溢出
-fig = plt.figure(figsize=(15, 7))
-gs = GridSpec(1, 2, width_ratios=[5, 2])  # 主图6 + 右侧1.3专门放图例
+# %% [4] Create Plot Layout with GridSpec
+fig = plt.figure(figsize=PLOT_FIGSIZE)
+gs = GridSpec(1, 2, width_ratios=[5, 2])
 
-ax = fig.add_subplot(gs[0])   # 主图
-ax_leg = fig.add_subplot(gs[1]) # 独立图例区域
+ax = fig.add_subplot(gs[0])
+ax_leg = fig.add_subplot(gs[1])
 ax_leg.axis('off')
 
-palette = ["#4A90E2", "#5CDB96", "#F5A623", "#E2596B", "#9B6DD9", "#5CC8DB"]
-
+# %% [5] Scatter Plot
 sns.scatterplot(
     data=df_plot,
     x="neglog10P",
     y="GO_short",
     hue="basis_idx",
     size="size_scaled",
-    sizes=(80, 500),
-    palette=palette,
+    sizes=POINT_SIZE_RANGE,
+    palette=PALETTE_COLORS,
     edgecolor="#f0f0f0",
     linewidth=1,
     alpha=0.9,
@@ -81,20 +89,22 @@ sns.scatterplot(
     ax=ax
 )
 
-# ================= 手动构建 legend（完全不变） =================
+# %% [6] Create Custom Legends
 unique_basis = sorted(df_plot['basis_idx'].unique())
 hue_handles = [
     Line2D([0], [0], marker='o', color='w',
            label=f'Basis {b}',
-           markerfacecolor=palette[i % len(palette)],
+           markerfacecolor=PALETTE_COLORS[i % len(PALETTE_COLORS)],
            markersize=8)
     for i, b in enumerate(unique_basis)
 ]
 
+# Calculate size quantiles
 quantiles = df_plot['Combined_Score'].quantile([0.25, 0.5, 0.75, 0.95]).values
 size_values = np.unique(np.round(quantiles, 0))
 
-def map_size(v, vmin, vmax, smin=80, smax=500):
+# Size mapping function
+def map_size(v, vmin, vmax, smin=POINT_SIZE_RANGE[0], smax=POINT_SIZE_RANGE[1]):
     v_log = np.log1p(v)
     vmin_log = np.log1p(vmin)
     vmax_log = np.log1p(vmax)
@@ -107,35 +117,33 @@ size_handles = [
     Line2D([0], [0], marker='o', color='gray',
            label=f"{int(v)}",
            markerfacecolor='gray',
-           markersize=np.sqrt(map_size(v, vmin, vmax))
-    )
+           markersize=np.sqrt(map_size(v, vmin, vmax)))
     for v in size_values
 ]
 
-# ================= ✅ 图例放在独立区域，永不溢出、不重叠 =================
-# 1. Basis 图例（放在右侧上方）
+# Add legends to dedicated axis
 leg1 = ax_leg.legend(
     hue_handles, [h.get_label() for h in hue_handles],
-    title="Basis", loc="upper left", frameon=False, labelspacing=1.2, ncol=2
+    title="Basis", loc="upper left", frameon=False, labelspacing=LABEL_SPACING, ncol=2
 )
 
-# 2. Score 图例（放在右侧下方）
 leg2 = ax_leg.legend(
     size_handles, [h.get_label() for h in size_handles],
-    title="Combined Score", loc="lower left", frameon=False, labelspacing=1.2, ncol=2
+    title="Combined Score", loc="lower left", frameon=False, labelspacing=LABEL_SPACING, ncol=2
 )
 
 ax_leg.add_artist(leg1)
 
-# 主图样式（不变）
+# %% [7] Final Styling and Save
 ax.set_xlabel("-log10(Adjusted P-value)", fontsize=11)
 ax.set_ylabel("")
-ax.grid(axis='x', alpha=0.15)
+ax.grid(axis='x', alpha=GRID_ALPHA)
 sns.despine(left=True, bottom=True, ax=ax)
 
-# 保存
 plt.tight_layout()
-plt.savefig(SAVE_PATH, dpi=300, bbox_inches='tight', facecolor="white")
+plt.savefig(SAVE_PATH, dpi=DPI_VALUE, bbox_inches='tight', facecolor="white")
+plt.show()
 plt.close()
 
-print("✅ 修复完成：图例永不溢出！")
+# %% [8] Completion Message
+print("GO enrichment plot saved to:", SAVE_PATH)
