@@ -17,7 +17,7 @@ conda activate scLinformer
 pip install .
 ```
 
-**Agent (Optional) **
+**Agent (Optional)**
 
 The following components are required **only if you want to run the agent service**.
 
