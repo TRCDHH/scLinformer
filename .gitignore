@@ -73,3 +73,6 @@ poetry.lock
 
 .DS_Store
 Thumbs.db
+
+# middle output
+draw/*/images/
