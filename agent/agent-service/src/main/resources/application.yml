@@ -4,10 +4,10 @@ server:
 spring:
   data:
     redis:
-      host: 47.102.40.253
+      host: xxxx
       port: 6379
   datasource:
-    url: jdbc:mysql://47.102.40.253:3306/agent_db?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+    url: jdbc:mysql://xxxx.253:3306/agent_db?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
     username: root
     password: crm114514
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -35,7 +35,7 @@ langchain4j:
       log-responses: true
   community:
     redis:
-      host: 47.102.40.253
+      host: xxxx
       port: 6379
       dimension: 384
 
