@@ -1,0 +1,433 @@
+dataset,head_idx,basis_idx,GO_term,Adjusted_P_value,Combined_Score
+covid,0,0,positive regulation of osteoblast proliferation (GO:0033690),0.0082883509935723,3684.499894523836
+covid,0,0,regulation of osteoblast proliferation (GO:0033688),0.0371908399117599,773.4756743774749
+covid,2,0,regulation of gap junction assembly (GO:1903596),0.0136133357454479,1927.3444106230904
+covid,3,1,B cell activation (GO:0042113),0.0033976271643604,445.0188321799124
+covid,3,1,lymphocyte chemotaxis (GO:0048247),0.0074125830710879,548.7162098920684
+covid,3,1,positive regulation of MAPK cascade (GO:0043410),0.0074125830710879,145.03727646540162
+covid,3,1,positive regulation of ERK1 and ERK2 cascade (GO:0070374),0.0134923457492345,163.4782568517394
+covid,3,1,positive regulation of calcium ion import (GO:0090280),0.0149112221490562,1126.5206724787724
+covid,1,2,chemical synaptic transmission (GO:0007268),0.0140571080671852,122.57658490846
+covid,1,2,"synaptic transmission, GABAergic (GO:0051932)",0.0140571080671852,1432.0496756090347
+covid,3,2,regulation of humoral immune response (GO:0002920),0.0185066156099232,414.1127253263179
+covid,3,2,regulation of bile acid biosynthetic process (GO:0070857),0.0185066156099232,1646.7365311362207
+covid,3,2,regulation of interferon-gamma production (GO:0032649),0.02778374511055,217.17528174058037
+covid,3,2,regulation of steroid biosynthetic process (GO:0050810),0.02778374511055,773.4756743774749
+covid,3,2,regulation of steroid metabolic process (GO:0019218),0.0411182200250279,510.5767014966948
+covid,0,3,alcohol catabolic process (GO:0046164),0.0224201976767764,1432.0496756090347
+covid,0,3,presynapse assembly (GO:0099054),0.030981713222491,714.6879621205851
+covid,1,3,lymphocyte mediated immunity (GO:0002449),0.0340558429468386,1126.5206724787724
+covid,1,3,bone morphogenesis (GO:0060349),0.0340558429468386,1014.3901741044946
+covid,2,3,regulation of nervous system development (GO:0051960),0.0129113093622583,584.9150656046422
+covid,2,3,positive regulation of humoral immune response (GO:0002922),0.0129113093622583,2851.750942795132
+covid,2,3,positive regulation of T cell activation (GO:0050870),0.0256309043939524,262.9199107042494
+covid,2,3,regulation of epithelial to mesenchymal transition (GO:0010717),0.0256309043939524,258.11616658083483
+covid,2,3,positive regulation of heterotypic cell-cell adhesion (GO:0034116),0.0256309043939524,920.7238662710552
+covid,3,3,negative regulation of steroid metabolic process (GO:0045939),0.0159572872751855,2851.750942795132
+covid,1,4,renal absorption (GO:0070293),0.0360329087942159,1014.3901741044946
+covid,1,4,regulation of fat cell differentiation (GO:0045598),0.0360329087942159,240.2992776641392
+covid,1,4,positive regulation of cellular process (GO:0048522),0.0360329087942159,63.81204508407794
+covid,1,4,positive regulation of peptidase activity (GO:0010952),0.0468488621563475,542.5477632515199
+covid,1,4,positive regulation of cell population proliferation (GO:0008284),0.0485839784493098,61.16573726126351
+covid,3,4,second-messenger-mediated signaling (GO:0019932),0.0488214458260885,206.9722118819376
+covid,3,4,calcium-mediated signaling (GO:0019722),0.0488214458260885,170.75018181181642
+covid,3,4,negative regulation of phosphate metabolic process (GO:0045936),0.0488214458260885,542.5477632515199
+covid,0,5,induction of bacterial agglutination (GO:0043152),0.0054942422717088,3684.499894523836
+covid,0,5,antibacterial humoral response (GO:0019731),0.0054942422717088,548.7162098920684
+covid,0,5,positive regulation of peptide secretion (GO:0002793),0.0055231247881531,2308.188874209161
+covid,0,5,plasminogen activation (GO:0031639),0.0055231247881531,1927.3444106230904
+covid,0,5,fibrinolysis (GO:0042730),0.0104518494215838,920.7238662710552
+covid,1,5,cellular protein catabolic process (GO:0044257),0.0054041237130708,358.15436396134345
+covid,1,5,extracellular matrix disassembly (GO:0022617),0.0054041237130708,313.9569920205279
+covid,1,5,cellular component disassembly (GO:0022411),0.0054041237130708,313.9569920205279
+covid,1,5,proteolysis involved in cellular protein catabolic process (GO:0051603),0.0056953986154392,267.87616185965635
+covid,1,5,regulation of epidermal cell differentiation (GO:0045604),0.0158388083794056,455.6920507677008
+covid,3,5,xenobiotic glucuronidation (GO:0052697),0.0415188845866229,1432.0496756090347
+covid,1,6,leukotriene B4 metabolic process (GO:0036102),0.0012507348942824,5105.230681141124
+covid,1,6,quinone catabolic process (GO:1901662),0.0012507348942824,5105.230681141124
+covid,1,6,menaquinone metabolic process (GO:0009233),0.0012507348942824,5105.230681141124
+covid,1,6,renal system process involved in regulation of blood volume (GO:0001977),0.0014057693351843,3684.499894523836
+covid,1,6,vitamin K metabolic process (GO:0042373),0.0020953787298444,2308.188874209161
+covid,2,6,positive regulation of microglial cell activation (GO:1903980),0.0083421508680947,3684.499894523836
+covid,2,6,positive regulation of microglial cell migration (GO:1904141),0.0083421508680947,3684.499894523836
+covid,2,6,regulation of microglial cell migration (GO:1904139),0.0083421508680947,2851.750942795132
+covid,2,6,positive regulation of glial cell migration (GO:1903977),0.0083421508680947,2308.188874209161
+covid,2,6,positive regulation of cholesterol esterification (GO:0010873),0.0085725119951335,1927.3444106230904
+covid,0,7,triglyceride-rich lipoprotein particle remodeling (GO:0034370),0.0255722077391989,1126.5206724787724
+covid,0,7,low-density lipoprotein particle remodeling (GO:0034374),0.0255722077391989,1014.3901741044946
+covid,0,7,reverse cholesterol transport (GO:0043691),0.0255722077391989,773.4756743774749
+covid,0,7,high-density lipoprotein particle remodeling (GO:0034375),0.0255722077391989,714.6879621205851
+covid,0,7,sterol transport (GO:0015918),0.0280009012981153,578.2102706794014
+covid,0,8,striated muscle cell development (GO:0055002),0.0315827693873013,1014.3901741044946
+covid,0,8,negative regulation of insulin secretion (GO:0046676),0.0315827693873013,773.4756743774749
+covid,0,8,negative regulation of peptide hormone secretion (GO:0090278),0.0315827693873013,714.6879621205851
+covid,0,8,actin nucleation (GO:0045010),0.0324209153652057,578.2102706794014
+covid,0,8,"wound healing, spreading of cells (GO:0044319)",0.0331304592411935,481.769182294251
+covid,1,8,negative regulation of vascular endothelial growth factor signaling pathway (GO:1900747),0.0241059340351895,1646.7365311362207
+covid,1,8,negative regulation of cellular response to vascular endothelial growth factor stimulus (GO:1902548),0.0241059340351895,1262.919124249693
+covid,1,8,regulation of vascular endothelial growth factor signaling pathway (GO:1900746),0.0413668114347239,663.3671793000248
+covid,0,9,"complement activation, lectin pathway (GO:0001867)",0.0476023183667316,1646.7365311362207
+covid,1,9,positive regulation of microglial cell migration (GO:1904141),0.0039666851677691,3684.499894523836
+covid,1,9,glial cell migration (GO:0008347),0.0039666851677691,2851.750942795132
+covid,1,9,regulation of microglial cell migration (GO:1904139),0.0039666851677691,2851.750942795132
+covid,1,9,positive regulation of glial cell migration (GO:1903977),0.0039666851677691,2308.188874209161
+covid,1,9,macrophage migration (GO:1905517),0.0118227059000273,920.7238662710552
+covid,2,9,positive regulation of tissue remodeling (GO:0034105),0.0255281130343157,1646.7365311362207
+covid,2,9,positive regulation of protein depolymerization (GO:1901881),0.0255281130343157,1262.919124249693
+covid,2,9,fibrinolysis (GO:0042730),0.0269996909548971,920.7238662710552
+covid,0,11,negative regulation of T cell cytokine production (GO:0002725),0.0274617765194377,1927.3444106230904
+covid,0,11,regulation of T-helper 2 cell cytokine production (GO:2000551),0.0274617765194377,1432.0496756090347
+covid,0,11,cytokine-mediated signaling pathway (GO:0019221),0.0380544266287525,64.5118758576405
+covid,0,11,positive regulation of neutrophil chemotaxis (GO:0090023),0.0380544266287525,663.3671793000248
+covid,0,11,positive regulation of granulocyte chemotaxis (GO:0071624),0.0380544266287525,542.5477632515199
+covid,1,11,negative regulation of bone mineralization (GO:0030502),0.0357242308104051,1014.3901741044946
+covid,1,11,negative regulation of biomineral tissue development (GO:0070168),0.0357242308104051,542.5477632515199
+covid,1,11,glutathione derivative biosynthetic process (GO:1901687),0.0357242308104051,542.5477632515199
+covid,1,11,glutathione derivative metabolic process (GO:1901685),0.0357242308104051,542.5477632515199
+covid,1,11,negative regulation of ossification (GO:0030279),0.0357242308104051,481.769182294251
+covid,2,11,positive regulation of long-term synaptic potentiation (GO:1900273),0.0004494268924081565,2766.779988938022
+covid,2,11,regulation of long-term synaptic potentiation (GO:1900271),0.0024662065576908,929.695395471084
+covid,2,11,neutrophil degranulation (GO:0043312),0.0060545877807529,98.43456948039334
+covid,2,11,neutrophil activation involved in immune response (GO:0002283),0.0060545877807529,97.12672449628216
+covid,2,11,neutrophil mediated immunity (GO:0002446),0.0060545877807529,96.16295207470624
+covid,3,11,negative regulation of cellular senescence (GO:2000773),0.0484210151008011,1126.5206724787724
+covid,3,11,negative regulation of cell aging (GO:0090344),0.0484210151008011,773.4756743774749
+covid,3,11,cellular zinc ion homeostasis (GO:0006882),0.0497553295183629,390.5418048109173
+covid,3,11,negative regulation of oxidative stress-induced cell death (GO:1903202),0.0497553295183629,390.5418048109173
+covid,3,11,zinc ion homeostasis (GO:0055069),0.0497553295183629,355.5592348271371
+covid,0,12,negative regulation of cell-cell adhesion mediated by cadherin (GO:2000048),0.0330301800912015,1646.7365311362207
+covid,1,12,positive regulation of smooth muscle cell proliferation (GO:0048661),0.006404228343383,516.2210453747423
+covid,1,12,positive regulation of activation of Janus kinase activity (GO:0010536),0.006404228343383,2851.750942795132
+covid,1,12,regulation of smooth muscle cell proliferation (GO:0048660),0.006404228343383,473.30707301492265
+covid,1,12,regulation of activation of Janus kinase activity (GO:0010533),0.006404228343383,2308.188874209161
+covid,1,12,columnar/cuboidal epithelial cell differentiation (GO:0002065),0.0100357075315094,1432.0496756090347
+covid,2,12,negative regulation of blood coagulation (GO:0030195),0.0099984634005116,625.4573312945759
+covid,2,12,T cell chemotaxis (GO:0010818),0.0204628788319784,1432.0496756090347
+covid,2,12,fibrinolysis (GO:0042730),0.0259467782157089,920.7238662710552
+covid,2,12,T cell migration (GO:0072678),0.028276960480845,714.6879621205851
+covid,2,12,oligosaccharide biosynthetic process (GO:0009312),0.0338166909792241,510.5767014966948
+covid,0,13,extracellular matrix disassembly (GO:0022617),0.00030421169412277486,632.0029882878963
+covid,0,13,cellular component disassembly (GO:0022411),0.00030421169412277486,632.0029882878963
+covid,0,13,proteolysis (GO:0006508),0.0042123584972548,135.19010785017943
+covid,0,13,extracellular matrix organization (GO:0030198),0.0042123584972548,126.35364958827284
+covid,0,13,extracellular structure organization (GO:0043062),0.0108053490884476,116.74987235018932
+covid,1,14,positive regulation of microglial cell activation (GO:1903980),0.0123187648100546,3684.499894523836
+covid,1,14,positive regulation of neuroinflammatory response (GO:0150078),0.0269502920334419,1262.919124249693
+covid,1,14,regulation of microglial cell activation (GO:1903978),0.0276378986795235,920.7238662710552
+covid,1,14,positive regulation of macrophage activation (GO:0043032),0.0276378986795235,773.4756743774749
+covid,1,14,positive regulation of macrophage migration (GO:1905523),0.0277487106792218,663.3671793000248
+covid,2,14,positive regulation of extrinsic apoptotic signaling pathway (GO:2001238),0.0050506028604113,974.3950842230804
+covid,2,14,apoptotic chromosome condensation (GO:0030263),0.0050535473474185,5105.230681141124
+covid,2,14,positive regulation of myeloid leukocyte cytokine production involved in immune response (GO:0061081),0.0400163530671437,841.4142385973647
+covid,0,15,lymphocyte chemotaxis (GO:0048247),0.0117031271692382,548.7162098920684
+covid,0,15,defense response to bacterium (GO:0042742),0.0117031271692382,158.0751895080659
+covid,0,15,neutrophil chemotaxis (GO:0030593),0.0117031271692382,289.3731719294946
+covid,0,15,granulocyte chemotaxis (GO:0071621),0.0117031271692382,272.99193647793965
+covid,0,15,neutrophil migration (GO:1990266),0.0117031271692382,253.4583103840349
+covid,2,15,positive regulation of calcium ion import (GO:0090280),0.048528639651771,1126.5206724787724
+covid,0,16,positive regulation of cellular extravasation (GO:0002693),0.039858129203158,1432.0496756090347
+covid,3,16,positive regulation of cardiocyte differentiation (GO:1905209),0.0484963038702043,1262.919124249693
+covid,1,17,negative regulation of axon extension involved in axon guidance (GO:0048843),0.0483714744863127,618.2139479571657
+covid,1,17,apoptotic nuclear changes (GO:0030262),0.0483714744863127,481.769182294251
+covid,1,17,regulation of axon extension involved in axon guidance (GO:0048841),0.0483714744863127,481.769182294251
+covid,1,17,negative regulation of axon extension (GO:0030517),0.0483714744863127,340.05150286391984
+covid,1,17,negative regulation of chemotaxis (GO:0050922),0.0483714744863127,325.6801394016241
+covid,0,18,heat acclimation (GO:0010286),0.0056230773407373,3684.499894523836
+covid,0,18,cellular heat acclimation (GO:0070370),0.0056230773407373,3684.499894523836
+covid,2,18,Fc receptor mediated stimulatory signaling pathway (GO:0002431),0.0338049466206718,267.87616185965635
+covid,3,18,embryonic organ morphogenesis (GO:0048562),0.0156701980284655,548.7162098920684
+covid,3,18,cell junction maintenance (GO:0034331),0.0393785363771575,1014.3901741044946
+covid,3,18,pharyngeal system development (GO:0060037),0.0393785363771575,773.4756743774749
+covid,1,19,blood circulation (GO:0008015),0.0066313286392477,447.984506353784
+covid,1,19,amine metabolic process (GO:0009308),0.0066313286392477,2308.188874209161
+covid,2,19,neuronal ion channel clustering (GO:0045161),0.0318163103993611,1927.3444106230904
+covid,2,20,cell junction disassembly (GO:0150146),0.0074432642256002,3684.499894523836
+covid,2,20,synapse pruning (GO:0098883),0.0089070111020216,1927.3444106230904
+covid,0,21,positive regulation of glial cell proliferation (GO:0060252),0.0095865576290086,5105.230681141124
+covid,0,21,positive regulation of gliogenesis (GO:0014015),0.0100471808769686,2851.750942795132
+covid,0,21,regulation of glial cell proliferation (GO:0060251),0.0114611321895009,1927.3444106230904
+covid,0,21,positive regulation of neuroinflammatory response (GO:0150078),0.0157150779403448,1262.919124249693
+covid,0,21,positive regulation of acute inflammatory response (GO:0002675),0.0199451756023362,920.7238662710552
+covid,2,21,extracellular matrix organization (GO:0030198),0.0170033100985081,126.35364958827284
+covid,2,21,extracellular structure organization (GO:0043062),0.0218080561511135,116.74987235018932
+covid,2,21,external encapsulating structure organization (GO:0045229),0.0218080561511135,115.94521015883412
+covid,3,21,positive regulation of T-helper 1 type immune response (GO:0002827),0.0268140832397522,1262.919124249693
+covid,3,21,positive regulation of adaptive immune response based on somatic recombination of immune receptors built from immunoglobulin superfamily domains (GO:0002824),0.0268140832397522,1126.5206724787724
+covid,3,21,AMP metabolic process (GO:0046033),0.0268140832397522,1126.5206724787724
+covid,3,21,positive regulation of granulocyte macrophage colony-stimulating factor production (GO:0032725),0.0268140832397522,1014.3901741044946
+covid,3,21,regulation of granulocyte macrophage colony-stimulating factor production (GO:0032645),0.0282347143529546,841.4142385973647
+covid,0,22,spleen development (GO:0048536),0.0195609054838083,2308.188874209161
+covid,1,22,skin development (GO:0043588),0.0293241473593216,240.2992776641392
+covid,1,22,collagen fibril organization (GO:0030199),0.0293241473593216,206.9722118819376
+covid,2,22,sequestering of BMP from receptor via BMP binding (GO:0038098),0.021509420456045,2308.188874209161
+covid,2,22,negative regulation of endopeptidase activity (GO:0010951),0.021509420456045,334.8202497519519
+covid,2,22,sequestering of extracellular ligand from receptor (GO:0035581),0.0246611276511589,1014.3901741044946
+covid,2,22,cellular response to zinc ion (GO:0071294),0.0276754950837621,714.6879621205851
+covid,2,22,cellular response to copper ion (GO:0071280),0.0276754950837621,663.3671793000248
+covid,3,22,enzyme linked receptor protein signaling pathway (GO:0007167),0.0208461604004244,220.1794973259299
+covid,1,23,positive regulation of steroid biosynthetic process (GO:0010893),0.0207721070617531,2308.188874209161
+covid,1,23,regulation of systemic arterial blood pressure (GO:0003073),0.0281130360722604,841.4142385973647
+covid,1,23,epithelial structure maintenance (GO:0010669),0.0281130360722604,714.6879621205851
+covid,1,23,maintenance of gastrointestinal epithelium (GO:0030277),0.0281130360722604,714.6879621205851
+covid,2,23,regulation of leukocyte tethering or rolling (GO:1903236),0.0306986379671167,1646.7365311362207
+covid,2,24,regulation of chemokine production (GO:0032642),0.0138457936205606,584.9150656046422
+covid,2,24,positive regulation of chemokine production (GO:0032722),0.0139705278377484,424.9016340261825
+covid,2,24,defense response to bacterium (GO:0042742),0.0145396939839777,158.0751895080659
+covid,2,24,fat-soluble vitamin catabolic process (GO:0042363),0.0145396939839777,1262.919124249693
+covid,2,24,defense response to Gram-negative bacterium (GO:0050829),0.0145396939839777,272.99193647793965
+covid,2,25,brain development (GO:0007420),0.0241402657525079,199.3870414530625
+covid,2,25,positive regulation of macrophage differentiation (GO:0045651),0.0241402657525079,1432.0496756090347
+covid,2,25,regulation of macrophage differentiation (GO:0045649),0.0306096774892566,920.7238662710552
+covid,2,25,negative regulation of extrinsic apoptotic signaling pathway in absence of ligand (GO:2001240),0.0439241877957648,510.5767014966948
+covid,2,25,negative regulation of signal transduction in absence of ligand (GO:1901099),0.0439241877957648,510.5767014966948
+covid,1,26,antifungal humoral response (GO:0019732),0.0065642085803359,5105.230681141124
+covid,1,26,negative regulation of blood coagulation (GO:0030195),0.0065642085803359,625.4573312945759
+covid,1,26,regulation of response to wounding (GO:1903034),0.0088097729895541,2308.188874209161
+covid,1,26,plasminogen activation (GO:0031639),0.0088097729895541,1927.3444106230904
+covid,1,26,fibrinolysis (GO:0042730),0.0165171083137522,920.7238662710552
+covid,0,27,positive regulation of ruffle assembly (GO:1900029),0.0396289237294738,1126.5206724787724
+covid,2,27,regulated exocytosis (GO:0045055),0.0324923590748016,152.95471500588434
+covid,2,27,macrophage activation involved in immune response (GO:0002281),0.0324923590748016,1126.5206724787724
+covid,2,27,positive regulation of macrophage activation (GO:0043032),0.0376283792048394,773.4756743774749
+covid,0,28,positive regulation of cell killing (GO:0031343),0.0267196785992912,920.7238662710552
+covid,0,28,fibrinolysis (GO:0042730),0.0267196785992912,920.7238662710552
+covid,0,28,epithelial structure maintenance (GO:0010669),0.0267196785992912,714.6879621205851
+covid,0,28,maintenance of gastrointestinal epithelium (GO:0030277),0.0267196785992912,714.6879621205851
+covid,1,28,negative regulation of transcription from RNA polymerase II promoter in response to stress (GO:0097201),0.028561391020039,1646.7365311362207
+covid,2,30,cell chemotaxis (GO:0060326),0.0376458648531831,295.206255852885
+covid,2,30,regulation of microglial cell activation (GO:1903978),0.0376458648531831,920.7238662710552
+covid,2,30,regulation of inflammatory response (GO:0050727),0.0376458648531831,125.31022750486076
+covid,2,30,second-messenger-mediated signaling (GO:0019932),0.0376458648531831,206.9722118819376
+covid,2,30,calcium-mediated signaling (GO:0019722),0.0449400065101783,170.75018181181642
+covid,2,31,anterior/posterior pattern specification (GO:0009952),0.0251251581913163,334.8202497519519
+covid,2,31,defense response to bacterium (GO:0042742),0.0251251581913163,158.0751895080659
+covid,2,31,positive regulation of multicellular organismal process (GO:0051240),0.0251251581913163,101.80335597271028
+covid,2,31,defense response to Gram-negative bacterium (GO:0050829),0.0251251581913163,272.99193647793965
+covid,2,31,cytokine-mediated signaling pathway (GO:0019221),0.0251251581913163,64.5118758576405
+covid,0,32,negative regulation of T cell mediated cytotoxicity (GO:0001915),0.0204693066672669,2308.188874209161
+covid,0,32,negative regulation of leukocyte mediated cytotoxicity (GO:0001911),0.0381304827691722,920.7238662710552
+covid,2,32,cell junction disassembly (GO:0150146),0.007573277574519,3684.499894523836
+covid,2,32,synapse pruning (GO:0098883),0.0090625920819696,1927.3444106230904
+covid,2,32,negative regulation of microtubule polymerization (GO:0031115),0.011045590226547,1262.919124249693
+covid,2,32,negative regulation of protein polymerization (GO:0032272),0.0434453649664344,410.3538550694941
+covid,2,32,negative regulation of microtubule polymerization or depolymerization (GO:0031111),0.0463459758595538,325.6801394016241
+covid,1,33,columnar/cuboidal epithelial cell differentiation (GO:0002065),0.0001305792532917715,4023.41726456181
+covid,1,33,digestive tract development (GO:0048565),0.0037965179868609,625.4573312945759
+covid,1,33,intestinal epithelial cell differentiation (GO:0060575),0.0067937027910616,1927.3444106230904
+covid,0,34,lymphocyte chemotaxis (GO:0048247),0.0111819437783371,548.7162098920684
+covid,3,34,very-low-density lipoprotein particle remodeling (GO:0034372),0.0225592420924565,1927.3444106230904
+covid,3,34,triglyceride-rich lipoprotein particle remodeling (GO:0034370),0.0237690392447682,1126.5206724787724
+covid,3,34,reverse cholesterol transport (GO:0043691),0.0237690392447682,773.4756743774749
+covid,3,34,high-density lipoprotein particle remodeling (GO:0034375),0.0237690392447682,714.6879621205851
+covid,3,34,acylglycerol homeostasis (GO:0055090),0.0308686453630888,455.6920507677008
+covid,0,35,visual perception (GO:0007601),0.0320523418846559,194.55961688941923
+covid,0,35,sensory perception of light stimulus (GO:0050953),0.0320523418846559,188.8103874255081
+covid,0,35,regulation of neural precursor cell proliferation (GO:2000177),0.0320523418846559,510.5767014966948
+covid,0,35,cholesterol efflux (GO:0033344),0.0320523418846559,481.769182294251
+covid,3,35,modulation by host of viral process (GO:0044788),0.0207100307625781,1262.919124249693
+covid,3,35,negative regulation by host of viral process (GO:0044793),0.0207100307625781,1262.919124249693
+covid,3,35,regulation of response to stress (GO:0080134),0.0207100307625781,1126.5206724787724
+covid,2,36,antimicrobial humoral immune response mediated by antimicrobial peptide (GO:0061844),0.0205618111523822,327.6105048942736
+covid,2,36,defense response to Gram-positive bacterium (GO:0050830),0.0205618111523822,289.3731719294946
+covid,3,36,monocyte differentiation (GO:0030224),0.0261443583418934,1432.0496756090347
+covid,3,36,positive regulation of small molecule metabolic process (GO:0062013),0.0261443583418934,841.4142385973647
+covid,3,36,cellular response to zinc ion (GO:0071294),0.0261443583418934,714.6879621205851
+covid,3,36,cellular response to copper ion (GO:0071280),0.0261443583418934,663.3671793000248
+covid,3,36,response to copper ion (GO:0046688),0.0261443583418934,510.5767014966948
+covid,0,37,positive regulation of cell migration involved in sprouting angiogenesis (GO:0090050),0.0416848096710421,714.6879621205851
+covid,0,37,negative regulation of immune system process (GO:0002683),0.0416848096710421,663.3671793000248
+covid,0,37,exogenous drug catabolic process (GO:0042738),0.0416848096710421,542.5477632515199
+covid,0,37,drug catabolic process (GO:0042737),0.0416848096710421,510.5767014966948
+covid,0,37,regulation of neuron migration (GO:2001222),0.0463084241601631,390.5418048109173
+covid,3,37,chemokine-mediated signaling pathway (GO:0070098),0.0129353792178665,393.8892595235548
+covid,3,37,cellular response to chemokine (GO:1990869),0.0129353792178665,358.15436396134345
+covid,0,38,"synaptic transmission, GABAergic (GO:0051932)",0.0320288538239662,1432.0496756090347
+covid,2,38,inflammatory response (GO:0006954),0.0070097587487082,188.4656619913526
+covid,2,38,chemokine-mediated signaling pathway (GO:0070098),0.0105909442011936,393.8892595235548
+covid,2,38,cellular response to chemokine (GO:1990869),0.0105909442011936,358.15436396134345
+covid,2,38,neutrophil chemotaxis (GO:0030593),0.0111269282762093,289.3731719294946
+covid,2,38,granulocyte chemotaxis (GO:0071621),0.0111269282762093,272.99193647793965
+covid,3,38,pantothenate metabolic process (GO:0015939),0.0139114812142643,2851.750942795132
+covid,0,39,calcium-mediated signaling (GO:0019722),0.0062327195433489,344.9313840349303
+covid,0,39,macrophage chemotaxis (GO:0048246),0.0280880352327429,1262.919124249693
+covid,0,39,macrophage migration (GO:1905517),0.0297071808556667,920.7238662710552
+covid,0,39,calcium-mediated signaling using intracellular calcium source (GO:0035584),0.042045223856621,578.2102706794014
+covid,0,39,protein kinase B signaling (GO:0043491),0.042045223856621,481.769182294251
+covid,1,39,regulation of glycoprotein biosynthetic process (GO:0010559),0.0278063127450372,1646.7365311362207
+covid,1,39,response to nitric oxide (GO:0071731),0.0278063127450372,1126.5206724787724
+covid,1,39,cellular response to zinc ion (GO:0071294),0.0278063127450372,714.6879621205851
+covid,1,39,cellular response to copper ion (GO:0071280),0.0278063127450372,663.3671793000248
+covid,1,39,response to copper ion (GO:0046688),0.0278063127450372,510.5767014966948
+covid,3,39,"complement activation, lectin pathway (GO:0001867)",0.0296300144935778,1646.7365311362207
+covid,1,40,regulation of cell adhesion molecule production (GO:0060353),0.0142806955100195,1927.3444106230904
+covid,1,40,granulocyte activation (GO:0036230),0.0142806955100195,1646.7365311362207
+covid,1,40,neutrophil activation (GO:0042119),0.0252463686732623,841.4142385973647
+covid,2,40,positive regulation of focal adhesion assembly (GO:0051894),0.0012687763018491,1766.709919184615
+covid,2,40,positive regulation of cell-substrate junction organization (GO:0150117),0.0013183980405601,1268.516156997622
+covid,2,40,regulation of very-low-density lipoprotein particle remodeling (GO:0010901),0.0035377913480036,3684.499894523836
+covid,2,40,positive regulation of cell-matrix adhesion (GO:0001954),0.0035377913480036,548.7162098920684
+covid,2,40,regulation of focal adhesion assembly (GO:0051893),0.0035377913480036,414.1127253263179
+covid,0,41,smooth muscle cell migration (GO:0014909),0.0194124264002969,2851.750942795132
+covid,1,41,zymogen activation (GO:0031638),0.0148190883400447,532.0407033036188
+covid,1,41,plasminogen activation (GO:0031639),0.0148190883400447,1927.3444106230904
+covid,1,41,fibrinolysis (GO:0042730),0.0214907010873589,920.7238662710552
+covid,1,41,positive regulation of heterotypic cell-cell adhesion (GO:0034116),0.0214907010873589,920.7238662710552
+covid,1,41,response to calcium ion (GO:0051592),0.0352429376990945,159.53053959530183
+covid,3,41,neutrophil degranulation (GO:0043312),0.0449605506971111,59.70176653840387
+covid,3,41,neutrophil activation involved in immune response (GO:0002283),0.0449605506971111,58.8884680396334
+covid,3,41,neutrophil mediated immunity (GO:0002446),0.0449605506971111,58.28923489493874
+covid,1,42,regulation of leukocyte tethering or rolling (GO:1903236),0.0132267303754527,1646.7365311362207
+covid,1,42,induction of positive chemotaxis (GO:0050930),0.0132267303754527,1432.0496756090347
+covid,1,42,positive regulation of positive chemotaxis (GO:0050927),0.021682502745941,773.4756743774749
+covid,0,43,regulation of insulin secretion (GO:0050796),0.0091663137095084,335.6525574527429
+covid,0,43,amino sugar metabolic process (GO:0006040),0.0261327013074506,1646.7365311362207
+covid,0,43,regulation of peptide hormone secretion (GO:0090276),0.0329475747860896,267.87616185965635
+covid,0,43,regulation of osteoblast proliferation (GO:0033688),0.039232689946131,773.4756743774749
+covid,0,43,regulation of epithelial cell differentiation (GO:0030856),0.0393899903573123,663.3671793000248
+covid,1,44,monocyte chemotaxis (GO:0002548),0.0132408803070409,584.9150656046422
+covid,2,44,neuron differentiation (GO:0030182),0.0186258227878003,160.74004200179456
+covid,2,44,neutrophil migration (GO:1990266),0.0186258227878003,253.4583103840349
+covid,2,44,generation of neurons (GO:0048699),0.0186258227878003,129.01764315121972
+covid,3,44,cellular response to heparin (GO:0071504),0.005444308985974,5105.230681141124
+covid,3,44,response to heparin (GO:0071503),0.005444308985974,3684.499894523836
+covid,3,44,"synaptic transmission, GABAergic (GO:0051932)",0.0132465012728749,1432.0496756090347
+covid,0,45,surfactant homeostasis (GO:0043129),0.0079256042211985,2851.750942795132
+covid,0,45,chemical homeostasis within a tissue (GO:0048875),0.0079256042211985,2851.750942795132
+covid,0,45,creatine metabolic process (GO:0006600),0.0079256042211985,2851.750942795132
+covid,0,45,eye morphogenesis (GO:0048592),0.0425067684598886,618.2139479571657
+covid,0,45,dopaminergic neuron differentiation (GO:0071542),0.0425067684598886,618.2139479571657
+covid,1,45,organic acid catabolic process (GO:0016054),0.0074412969016361,1927.3444106230904
+covid,1,45,cellular iron ion homeostasis (GO:0006879),0.0074412969016361,375.2972809322434
+covid,1,45,"complement activation, lectin pathway (GO:0001867)",0.0074412969016361,1646.7365311362207
+covid,1,45,iron ion homeostasis (GO:0055072),0.0074412969016361,350.0764672072767
+covid,1,45,leukocyte tethering or rolling (GO:0050901),0.0162943624746258,714.6879621205851
+covid,2,45,negative regulation of cell motility (GO:2000146),0.0075121780366765,294.9300990642989
+covid,2,45,negative regulation of cell migration (GO:0030336),0.009372730692541,211.45429288640744
+covid,2,45,negative regulation of stress fiber assembly (GO:0051497),0.0457947709689112,481.769182294251
+covid,2,45,regulation of protein serine/threonine kinase activity (GO:0071900),0.0457947709689112,151.40276287997665
+covid,2,45,negative regulation of actin filament bundle assembly (GO:0032232),0.0457947709689112,410.3538550694941
+covid,0,46,positive regulation of MAPK cascade (GO:0043410),0.0139737207894157,145.03727646540162
+covid,0,46,positive regulation of ERK1 and ERK2 cascade (GO:0070374),0.0169565966848488,163.4782568517394
+covid,0,46,regulation of ERK1 and ERK2 cascade (GO:0070372),0.0390737430838369,100.88461971693135
+covid,1,46,induction of bacterial agglutination (GO:0043152),0.0052980439684403,3684.499894523836
+covid,1,46,epithelial structure maintenance (GO:0010669),0.0178131190661941,714.6879621205851
+covid,1,46,maintenance of gastrointestinal epithelium (GO:0030277),0.0178131190661941,714.6879621205851
+covid,1,46,mucosal immune response (GO:0002385),0.0327005657389289,390.5418048109173
+covid,2,46,"complement activation, classical pathway (GO:0006958)",0.01257429076052,1927.3444106230904
+covid,2,46,humoral immune response mediated by circulating immunoglobulin (GO:0002455),0.01257429076052,1432.0496756090347
+covid,3,46,central nervous system development (GO:0007417),0.000724407150139386,242.71889058568817
+covid,3,46,brain development (GO:0007420),0.0104484283801633,199.3870414530625
+covid,3,46,generation of neurons (GO:0048699),0.0134727120056584,129.01764315121972
+covid,3,46,central nervous system neuron development (GO:0021954),0.0134727120056584,920.7238662710552
+covid,3,46,B cell activation involved in immune response (GO:0002312),0.0134727120056584,841.4142385973647
+covid,2,47,negative regulation of microtubule polymerization (GO:0031115),0.0397185822950571,1262.919124249693
+covid,2,47,microtubule depolymerization (GO:0007019),0.0397185822950571,714.6879621205851
+covid,2,47,hydrogen peroxide catabolic process (GO:0042744),0.0397185822950571,578.2102706794014
+covid,2,47,microtubule polymerization or depolymerization (GO:0031109),0.0397185822950571,410.3538550694941
+covid,2,47,negative regulation of protein polymerization (GO:0032272),0.0397185822950571,410.3538550694941
+covid,0,48,induction of positive chemotaxis (GO:0050930),0.0355396054937618,1432.0496756090347
+covid,0,48,positive regulation of positive chemotaxis (GO:0050927),0.0355396054937618,773.4756743774749
+covid,0,48,embryonic heart tube development (GO:0035050),0.0355396054937618,714.6879621205851
+covid,0,48,regulation of smooth muscle cell migration (GO:0014910),0.0355396054937618,618.2139479571657
+covid,0,48,positive regulation of phosphatase activity (GO:0010922),0.0355396054937618,578.2102706794014
+covid,1,48,negative regulation of digestive system process (GO:0060457),0.0150935024939076,2851.750942795132
+covid,0,49,positive regulation of AMPA receptor activity (GO:2000969),0.0061813776567137,5105.230681141124
+covid,1,49,inhibitory synapse assembly (GO:1904862),0.0416375099711561,1432.0496756090347
+covid,2,51,regulation of long-term synaptic depression (GO:1900452),0.0289499813740531,1646.7365311362207
+covid,3,51,regulation of lipid biosynthetic process (GO:0046890),0.0093391732190354,751.5256964029736
+covid,3,51,extracellular matrix organization (GO:0030198),0.0186190092481401,126.35364958827284
+covid,3,51,negative regulation of cell activation (GO:0050866),0.0226684039299859,1014.3901741044946
+covid,3,51,negative regulation of leukocyte activation (GO:0002695),0.0226684039299859,920.7238662710552
+covid,3,51,extracellular structure organization (GO:0043062),0.0226684039299859,116.74987235018932
+covid,1,52,defense response to Gram-negative bacterium (GO:0050829),0.0260512525968053,272.99193647793965
+covid,1,52,negative regulation of smooth muscle cell migration (GO:0014912),0.0260512525968053,1014.3901741044946
+covid,1,52,extracellular structure organization (GO:0043062),0.0260512525968053,116.74987235018932
+covid,1,52,external encapsulating structure organization (GO:0045229),0.0260512525968053,115.94521015883412
+covid,1,52,regulation of smooth muscle cell migration (GO:0014910),0.0263256336990828,618.2139479571657
+covid,3,52,cellular response to zinc ion (GO:0071294),0.020278991472524,714.6879621205851
+covid,3,52,cellular response to copper ion (GO:0071280),0.020278991472524,663.3671793000248
+covid,3,52,response to copper ion (GO:0046688),0.020278991472524,510.5767014966948
+covid,3,52,leukotriene metabolic process (GO:0006691),0.020278991472524,481.769182294251
+covid,3,52,cellular response to cadmium ion (GO:0071276),0.020278991472524,410.3538550694941
+covid,0,53,negative regulation of transcription from RNA polymerase II promoter in response to stress (GO:0097201),0.0204981411742456,1646.7365311362207
+covid,1,53,"complement activation, lectin pathway (GO:0001867)",0.0376932643393711,1646.7365311362207
+covid,3,53,"complement activation, classical pathway (GO:0006958)",0.0147688603743844,1927.3444106230904
+covid,3,53,humoral immune response mediated by circulating immunoglobulin (GO:0002455),0.0147688603743844,1432.0496756090347
+covid,2,54,cellular response to ketone (GO:1901655),0.0087749144347879,647.5977302945712
+covid,2,54,extracellular matrix disassembly (GO:0022617),0.0142511972110818,313.9569920205279
+covid,2,54,cellular component disassembly (GO:0022411),0.0142511972110818,313.9569920205279
+covid,2,54,cAMP metabolic process (GO:0046058),0.0160003744879543,1014.3901741044946
+covid,3,54,positive regulation of memory T cell differentiation (GO:0043382),0.0166122376341043,1927.3444106230904
+covid,3,54,regulation of memory T cell differentiation (GO:0043380),0.0166122376341043,1646.7365311362207
+covid,3,54,positive regulation of natural killer cell mediated cytotoxicity (GO:0045954),0.046326688378846,618.2139479571657
+covid,1,55,chemokine-mediated signaling pathway (GO:0070098),0.0085777248940437,393.8892595235548
+covid,1,55,cellular response to chemokine (GO:1990869),0.0085777248940437,358.15436396134345
+covid,1,55,antimicrobial humoral immune response mediated by antimicrobial peptide (GO:0061844),0.0085777248940437,327.6105048942736
+covid,1,55,neutrophil chemotaxis (GO:0030593),0.0085777248940437,289.3731719294946
+covid,1,55,granulocyte chemotaxis (GO:0071621),0.0085777248940437,272.99193647793965
+covid,0,56,low-density lipoprotein particle remodeling (GO:0034374),0.0399275400066383,1014.3901741044946
+covid,1,56,positive regulation of secretion by cell (GO:1903532),0.036469244665467,278.2746781911583
+covid,1,56,cell junction maintenance (GO:0034331),0.036469244665467,1014.3901741044946
+covid,1,56,positive regulation of macrophage migration (GO:1905523),0.036469244665467,663.3671793000248
+covid,1,56,positive regulation of hormone secretion (GO:0046887),0.036469244665467,618.2139479571657
+covid,1,56,osteoclast differentiation (GO:0030316),0.036469244665467,542.5477632515199
+covid,3,56,cellular divalent inorganic cation homeostasis (GO:0072503),0.0088562591333177,306.2438474166383
+covid,3,56,cellular response to zinc ion (GO:0071294),0.0336860001712857,714.6879621205851
+covid,3,56,cellular response to copper ion (GO:0071280),0.0336860001712857,663.3671793000248
+covid,3,56,regulation of membrane protein ectodomain proteolysis (GO:0051043),0.0336860001712857,542.5477632515199
+covid,3,56,response to copper ion (GO:0046688),0.0336860001712857,510.5767014966948
+covid,1,57,postsynaptic density protein 95 clustering (GO:0097119),0.0018526902220926,5105.230681141124
+covid,1,57,postsynaptic density assembly (GO:0097107),0.0018526902220926,3684.499894523836
+covid,1,57,vocal learning (GO:0042297),0.0018526902220926,3684.499894523836
+covid,1,57,imitative learning (GO:0098596),0.0018526902220926,3684.499894523836
+covid,1,57,postsynaptic density organization (GO:0097106),0.0027615395977141,2308.188874209161
+covid,0,58,negative regulation of ERK1 and ERK2 cascade (GO:0070373),0.0105291379206464,460.3468031322656
+covid,0,58,negative regulation of MAPK cascade (GO:0043409),0.0344380147645351,191.6491643817023
+covid,1,58,positive regulation of lymphocyte migration (GO:2000403),0.0273988742119142,1014.3901741044946
+covid,1,58,regulation of T cell proliferation (GO:0042129),0.0273988742119142,258.11616658083483
+covid,1,58,inflammatory response (GO:0006954),0.0273988742119142,106.23638824320317
+covid,1,58,regulation of T cell migration (GO:2000404),0.0273988742119142,618.2139479571657
+covid,1,58,calcium-mediated signaling using intracellular calcium source (GO:0035584),0.0273988742119142,578.2102706794014
+covid,2,58,"synaptic transmission, GABAergic (GO:0051932)",0.0323770667300368,1432.0496756090347
+covid,2,58,regulation of extracellular matrix organization (GO:1903053),0.0323770667300368,920.7238662710552
+covid,3,58,cellular response to UV-A (GO:0071492),0.0329793651525419,1432.0496756090347
+covid,3,58,response to UV-A (GO:0070141),0.0329793651525419,1014.3901741044946
+covid,1,59,positive regulation of leukocyte chemotaxis (GO:0002690),0.0159356002531891,414.1127253263179
+covid,1,59,chemokine-mediated signaling pathway (GO:0070098),0.0159356002531891,393.8892595235548
+covid,1,59,cellular response to chemokine (GO:1990869),0.0159356002531891,358.15436396134345
+covid,1,59,positive regulation of lymphocyte migration (GO:2000403),0.0164581656082742,1014.3901741044946
+covid,1,59,positive regulation of macrophage chemotaxis (GO:0010759),0.0164581656082742,1014.3901741044946
+covid,2,59,alpha-amino acid biosynthetic process (GO:1901607),0.0186697175937571,1927.3444106230904
+covid,2,59,cellular biogenic amine biosynthetic process (GO:0042401),0.0350031434463622,773.4756743774749
+covid,1,60,low-density lipoprotein particle remodeling (GO:0034374),0.0437678170920905,1014.3901741044946
+covid,1,60,nitric oxide mediated signal transduction (GO:0007263),0.0437678170920905,714.6879621205851
+covid,3,60,negative regulation of anion transport (GO:1903792),0.0099785245295165,3684.499894523836
+covid,3,60,regulation of cellular response to growth factor stimulus (GO:0090287),0.0447748543251384,773.4756743774749
+covid,0,61,epithelial structure maintenance (GO:0010669),0.0480782410185286,714.6879621205851
+covid,0,61,maintenance of gastrointestinal epithelium (GO:0030277),0.0480782410185286,714.6879621205851
+covid,0,61,positive regulation of focal adhesion assembly (GO:0051894),0.0480782410185286,663.3671793000248
+covid,2,61,cholesterol transport (GO:0030301),0.00032092882064779305,902.3915670584192
+covid,2,61,cholesterol efflux (GO:0033344),0.0009895527627087565,1268.516156997622
+covid,2,61,chylomicron remnant clearance (GO:0034382),0.00497055102209,2851.750942795132
+covid,2,61,triglyceride metabolic process (GO:0006641),0.0051030561422936,403.78450809896594
+covid,2,61,chylomicron remodeling (GO:0034371),0.0051030561422936,1927.3444106230904
+covid,0,62,positive regulation of peptidyl-serine phosphorylation of STAT protein (GO:0033141),0.0309242482030913,714.6879621205851
+covid,0,62,regulation of peptidyl-serine phosphorylation of STAT protein (GO:0033139),0.0309242482030913,663.3671793000248
+covid,0,62,positive regulation of monocyte chemotaxis (GO:0090026),0.0309242482030913,663.3671793000248
+covid,0,62,positive regulation of defense response (GO:0031349),0.0309242482030913,180.69978250436736
+covid,0,62,regulation of monocyte chemotaxis (GO:0090025),0.0406448629077514,431.9867091057638
+covid,3,62,positive regulation of immune response (GO:0050778),0.0018659227664786,529.50965872386
+covid,3,62,positive regulation of prostaglandin biosynthetic process (GO:0031394),0.0043594979263138,5105.230681141124
+covid,3,62,positive regulation of unsaturated fatty acid biosynthetic process (GO:2001280),0.0045689668693907,2851.750942795132
+covid,3,62,regulation of prostaglandin biosynthetic process (GO:0031392),0.0045689668693907,2851.750942795132
+covid,3,62,immunoglobulin mediated immune response (GO:0016064),0.0078106661156841,1646.7365311362207
+covid,0,63,induction of positive chemotaxis (GO:0050930),0.0288046701277356,1432.0496756090347
+covid,0,63,myeloid leukocyte differentiation (GO:0002573),0.0288046701277356,283.7322904048699
+covid,0,63,macrophage differentiation (GO:0030225),0.0288046701277356,920.7238662710552
+covid,0,63,positive regulation of positive chemotaxis (GO:0050927),0.0288046701277356,773.4756743774749
+covid,0,63,positive regulation of receptor internalization (GO:0002092),0.042045223856621,510.5767014966948
+covid,1,63,negative regulation of leukocyte proliferation (GO:0070664),0.0199921559233149,1927.3444106230904
+covid,1,63,positive regulation of macrophage activation (GO:0043032),0.0313606800552331,773.4756743774749
+covid,1,63,positive regulation of leukocyte activation (GO:0002696),0.0313606800552331,663.3671793000248
+covid,2,63,"synaptic transmission, GABAergic (GO:0051932)",0.0158364888351833,1432.0496756090347
+covid,2,63,inhibitory synapse assembly (GO:1904862),0.0158364888351833,1432.0496756090347
