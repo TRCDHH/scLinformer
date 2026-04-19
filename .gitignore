@@ -64,6 +64,9 @@ poetry.lock
 *.swp
 *.swo
 *~
+*.pth
+*.npy
+*.csv
 
 .Rproj.user/
 .Rhistory
